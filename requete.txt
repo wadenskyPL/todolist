@@ -1,0 +1,26 @@
+rekiperasyon tout tach  konplete yo
+select task_id, task_name from tasks where STATUS="completed"
+-------------------------
+ajoute kolonn priyorite
+ALTER table tasks add COLUMN priority int;
+---------------------------------
+rekiperasyon tout tach yo
+select task_name from tasks;
+----------------------------------
+rekiperasyon tach pending
+select task_name ,status from tasks where STATUS="pending";
+--------------------------------------------------------------
+modifikasyon chanjman pending an konplet
+update tasks set STATUS = "completed " where task_id=4;
+ 
+--------------------------
+tach nan 7 jou
+select task_name, task_id 
+from tasks where status="completed"
+ and due_date BETWEEN "2023-08-18"and "2023-08-24";
+
+
+
+
+
+
